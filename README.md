@@ -1,7 +1,7 @@
 
 # ACE-step v1.5 Simple Implementation
 
-This repository is a **very much simplified implementation** of the open-source ACE-step v1.5 music generation model. It is designed for research and experimentation, supporting both conditional (text-to-music) and unconditional music generation using the "base" model weights.
+This repository is a **very much simplified implementation** of the Latent Diffusion Transformer inside the open-source ACE-step v1.5 music generation model. It is designed for research and experimentation, supporting both conditional (text-to-music) and unconditional music generation using the "base" model weights.
 
 ## Purpose
 Generate music from text prompts or without prompts, using original ACE-step v1.5 weights loaded from Hugging Face. Results may differ from the original codebase.
