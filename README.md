@@ -29,14 +29,13 @@ Output files are saved in the `output/` directory.
 ## Components
 - sample.py: Entry point, prompt selection, device check, output
 - processor.py: Loads model, runs inference
-- conditioning_processor.py: Prepares text conditioning
-- modeling_acestep_v15_base.py: Model architecture
-- configuration_acestep_v15.py: Model configuration
+- conditioning_processor.py: Prepares text conditioning (modified from original github repo)
+- modeling_acestep_v15_base.py: Model architecture (modified from huggingface)
+- configuration_acestep_v15.py: Model configuration (copied from huggingface)
 
 ## Disclaimer
 - All model weights and original code are credited to ACE-step authors and Hugging Face
 - This repository is for research and educational purposes only
-- I do not own the ACE-step model
 
 ## References
 - [ACE-step v1.5 on Hugging Face](https://huggingface.co/ACE-Step/Ace-Step1.5)
