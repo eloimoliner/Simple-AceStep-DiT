@@ -1,10 +1,9 @@
 
 # ACE-step v1.5 Simple Implementation
 
-This repository provides a **very much simplified implementation** of the open-source music generation model ACE-step v1.5. It is designed for research and experimentation, and supports both conditional (text-to-music) and unconditional music generation using the "base" model weights.
+This repository provides a **very much simplified implementation** of the open-source music generation model ACE-step v1.5. It is designed for research and experimentation, and supports both conditional (text-to-music) and unconditional music generation using the "acestep-v15-base" model version.
 
-## Project Purpose
-This project allows researchers to easily generate music from text prompts or without prompts, using the original ACE-step v1.5 weights. All model weights are loaded from Hugging Face. **I do not own the ACE-step model.**
+All model weights are loaded from Hugging Face and saved in the `checkpoints/` directory.
 
 ## Features
 - Loads ACE-step v1.5 "base" model weights from Hugging Face automatically
@@ -12,11 +11,6 @@ This project allows researchers to easily generate music from text prompts or wi
 - Unconditional mode: generate music without a prompt
 - Simple interface for prompt selection and output
 - Designed for NVIDIA GPUs (requires >16GB VRAM)
-
-## Requirements
-- Python 3.8+
-- NVIDIA GPU with CUDA support (required)
-- PyTorch, Transformers, Hugging Face Hub, Loguru, SoundFile, Einops
 
 ## Usage
 Run the main script:
@@ -34,7 +28,7 @@ Examples:
 - `python sample.py base 1` (Base + Upbeat Electronic)
 - `python sample.py -l` (List prompts)
 
-### Available Prompts
+### Available example Prompts
 0: Ambient Piano
 1: Upbeat Electronic
 2: Jazz Trio
@@ -53,7 +47,6 @@ Generated audio files are saved in the `output/` directory.
 - `configuration_acestep_v15.py`: Model configuration.
 
 ## Model Ownership & Disclaimer
-- **I do not own the ACE-step model.**
 - All model weights and original code are credited to the ACE-step authors and Hugging Face.
 - This repository is for research and educational purposes only.
 
@@ -63,6 +56,3 @@ Generated audio files are saved in the `output/` directory.
 
 ## License
 Please refer to the original ACE-step license for terms of use. This simplified implementation is provided as-is for research purposes.
-
----
-For questions or contributions, please open an issue or pull request.
