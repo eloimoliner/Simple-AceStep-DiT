@@ -55,7 +55,12 @@ mkdir -p output
 echo "Starting inference..."
 echo ""
 
-python sample.py "$2" "$3"
+#python sample.py "calm ambient music with soft piano and gentle strings"
+#python sample.py "upbeat electronic dance music with heavy bass and synthesizer leads"
+python sample.py "jazz trio with piano, upright bass, and brush drums"
+#python sample.py "epic cinematic orchestral arrangement with strings and brass"
+#python sample.py "melancholic indie folk with acoustic guitar and soft vocals"
+#python sample.py "emotional rock ballad with electric guitar and atmospheric strings"
 
 echo ""
 echo "✓ Complete! Check ./output/ for generated audio files."
