@@ -13,6 +13,15 @@ Generate music from text prompts or without prompts, using original ACE-step v1.
 - Simple prompt selection and output
 - Requires NVIDIA GPU (>16GB VRAM)
 
+## Installation
+
+Install required libraries via conda or pip. 
+
+There is a bug with the latest "transformers" version, use:
+```bash
+pip install "transformers>=4.50,<5.0"
+```
+
 ## Usage
 Run:
 
